@@ -1,16 +1,28 @@
 import React from 'react';
-import WeatherLocation from './components/Weather_Location';
+import LocationList from './components/LocationList';
 import logo from './logo.svg';
 import './App.css';
 
+const cities = [
+  'Guadalajara, mx',
+  'Bogota, col',
+  'New York, us',
+  'London, uk',
+  'Buenos Aires, ar',
+  'Lima, peru',
+  'Sydney, au'
+]
 
 function App() {
+
+  const handleSelectedLocation = city => {
+    console.log(`handleSelectedLocation: ${city}`);
+  }
+
   return (
     <div className="App">
-    <WeatherLocation> </WeatherLocation>
+    <LocationList cities={cities} onSelectedLocation={handleSelectedLocation}/>
     </div>
-
-
   );
 }
 
