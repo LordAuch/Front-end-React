@@ -11,7 +11,7 @@ import {
 
 
 const getTemp = (temp) => {
-  return Number(Convert(temp).from("K").to("C").toFixed(2));
+  return Number(Convert(temp).from("K").to("C").toFixed(0));
 }
 
 const getWeatherState = (weather) => {

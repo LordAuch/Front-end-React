@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
+import {Grid, Row, Col} from 'react-flexbox-grid';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import PropTypes from 'prop-types';
 import Location from './Location';
 import WeatherData from './Weather_Data';
 import transformWeather from './../../services/transformWeather';
-import getUrlWeatherByCity from './../../services/getUrlWeatherByCity';
+import {getUrlWeatherByCity} from './../../services/getUrlWeatherByCity';
 import './styles.css';
 
 
@@ -18,6 +19,7 @@ class WeatherLocation extends Component {
       data: null,
     };
   }
+
 
   handleUpdateClick = () => {
     const api_weather = getUrlWeatherByCity(this.state.city);

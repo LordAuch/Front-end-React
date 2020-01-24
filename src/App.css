@@ -48,3 +48,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+.details {
+  background: #999;
+  width: 100%;
+  height: calc(100vh - 90px);
+  box-shadow: 10px 10px 40px -12px rgba(0, 0, 0, 0.75);
+  overflow: auto;
+  margin-top: 20px;
+}
+
+.byLrd {
+  text-align: right;
+  color: rgba(0, 0, 0, 0.2);
+}
