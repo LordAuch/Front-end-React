@@ -6,21 +6,6 @@ import PropTypes from 'prop-types';
 import ForecastItem from './ForecastItem';
 import './styles.css';
 
-const days = [
-  'Lunes',
-  'Martes',
-  'Miercoles',
-  'Jueves',
-  'Viernes',
-]
-
-const data = {
-  temperature: 26,
-  weatherState: 'nomrmal',
-  humidity: 89 ,
-  wind: '10',
-}
-
 
 class ForecastExtended extends Component {
 
